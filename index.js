@@ -36,7 +36,7 @@ app.get('/films', async (req, res, next) => {
       return res.send(results).status(200);
     } catch (error) {
       console.error(error);
-      next(error);
+      next(error); 
     }
   });
 
